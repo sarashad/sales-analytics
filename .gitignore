@@ -13,7 +13,7 @@ data/raw/
 *.csv
 
 # Power BI
-*.pbix
+#*.pbix
 
 # OS
 .DS_Store
