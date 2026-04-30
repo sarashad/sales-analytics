@@ -313,8 +313,33 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 5,
    "id": "2c151531-ca1d-47c0-8ed9-9daebefb6c9a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Cleaned data saved!\n",
+      "Shape: (9800, 21)\n",
+      "Columns: ['Row ID', 'Order ID', 'Order Date', 'Ship Date', 'Ship Mode', 'Customer ID', 'Customer Name', 'Segment', 'Country', 'City', 'State', 'Region', 'Product ID', 'Category', 'Sub-Category', 'Product Name', 'Sales', 'Year', 'Month', 'Month Name', 'Days to Ship']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Step 4: Save cleaned data\n",
+    "df.to_csv('../data/cleaned_data.csv', index=False)\n",
+    "\n",
+    "print(\"Cleaned data saved!\")\n",
+    "print(\"Shape:\", df.shape)\n",
+    "print(\"Columns:\", df.columns.tolist())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a28aefdb-ce92-4ff4-b928-18e917a0f974",
    "metadata": {},
    "outputs": [],
    "source": []
